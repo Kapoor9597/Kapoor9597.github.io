@@ -1,0 +1,180 @@
+body {
+	background: url(knowMe.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: "Source Sans Pro";
+}
+
+.navbar-default {
+	background-color: rgba(235, 234, 234, 1.0) !important;
+	border: 0;
+	font-size: 25px !important;
+	font-family: Ubuntu !important;
+}
+
+.navbar-header a {
+	font-family: "Source Sans Pro" !important;
+	font-size: 25px !important;
+}
+
+ul li.active a { color: #FFFFFF; }
+
+.nav>li>a:focus, .nav>li>a:hover {
+	background: none !important;
+}
+
+.jumbotron {
+	background-color: rgba(99, 77, 77, 0.5) !important;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-left: 18px;
+	color: #FFFFFF;
+	text-decoration: underline;
+	padding-top: 0px;
+}
+
+.about {
+	color: #FFFFFF;
+}
+
+ol {
+	font-size: 18px;
+}
+
+hr.style15 {
+	border-top: 4px double #8c8b8b;
+	text-align: center;
+}
+
+hr.style15:after {
+	content: '\002665';
+	display: inline-block;
+	position: relative;
+	top: -15px;
+	padding: 0 10px;
+	background: #f0f0f0;
+	color: #8c8b8b;
+	font-size: 18px;
+}
+
+.userinput {
+	font-family: "Source Sans Pro";
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+.contact-info {
+	font-family: "Source Sans Pro";
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+.footnote p{
+	font-family: "Source Sans Pro";
+	font-size: 18px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.logo {
+   bottom: 0;
+   width: 100%;
+   height: 60px;
+   font-size: 45px;
+   color: #fff;
+   padding-left: 48.5%;
+}
+
+.logo a:hover{ color: #11ABB0;}
+
+.education {
+	font-family: "Source Sans Pro";
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+h3 {
+	padding-left: 2%;
+	font-size: 25px;
+	text-decoration: dashed underline;
+}
+
+.technical p {
+	padding-left: 2%;
+}
+
+.container-skills {
+	margin-left: 2%;
+	width: 100%;
+	background-color: #ddd;
+	height: 50%;
+	display: inline-block;
+	margin-bottom: 2%;
+}
+
+.technical {
+	font-family: "Source Sans Pro";
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+.skills {
+	text-align: right;
+	padding-right: 20px;
+	line-height: 40px;
+	color: white;
+}
+
+.html {
+	width: 60%;
+	background-color: #4caf50;
+}
+
+.css {
+	width: 52%;
+	background-color: #2196f3;
+}
+
+.java {
+	width: 70%;
+	background-color: #f44336;
+}
+
+.python {
+	width: 40%;
+	background-color: #808080;
+}
+
+.ml {
+	width: 40%;
+	background-color: #7dcea0;
+}
+
+.stats {
+	width: 55%;
+	background-color: #f0b27a;
+}
+
+.work ol {
+	font-family: "Source Sans Pro";
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+@-webkit-keyframes bounce {
+	0%, 20%, 60%, 100%  { -webkit-transform: translateY(0); }
+    40%  { -webkit-transform: translateY(-20px); }
+	80% { -webkit-transform: translateY(-10px); }
+}
+
+.bounce {
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    -webkit-animation: bounce 2s infinite ease-in-out;
+}

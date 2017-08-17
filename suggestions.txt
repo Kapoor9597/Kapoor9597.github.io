@@ -1,0 +1,6 @@
+My Portfolio :-
+ 
+Suggesstions: simple background for /knowMe. maybe just a dark gradient. landing page is perfect, 
+	      You can put your professional photo on the first page top right corner, it would look gr8!!!,
+	      you also could search about the 'smooth scroll' with jQuery, it gives a nice effect when you click on the link of your menu.
+	      
