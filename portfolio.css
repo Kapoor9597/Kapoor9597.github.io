@@ -109,7 +109,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 #intro {
-	color: #978B8B;
+	color: #978B8B, #AEBBB4;
 	font-family: Raleway;
 	font-size: 18px;
 }
