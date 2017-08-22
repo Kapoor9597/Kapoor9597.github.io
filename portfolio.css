@@ -1,29 +1,236 @@
-html {
-	height: 100%;
-}
-
 body {
-	background: url('header-background.jpg');
+	background: url(img/background.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 100%;
+	opacity: 1.0;
+	margin: 0;
+	padding: 0;
 }
 
-h2 {
+.container {
 	text-align: center;
-	font-family: Raleway;
-	color: white;
-	font-size: 40px;
-	font-weight: bold;
-	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-				 0px 8px 13px rgba(0,0,0,0.1),
-				 0px 18px 23px rgba(0,0,0,0.1);
 }
 
-.navbar-inverse{
-	text-transform: uppercase;
-	font-family: Raleway;
+.name {
+	margin-top: 19%;
 }
+
+.name #me {
+	color: #fff;
+	font-weight: bolder;
+	font-size: 80px;
+	opacity: 0.75;
+	font-family: Lobster;
+	letter-spacing: 5px;
+}
+
+.work {
+	font-weight: bold;
+	font-family: Inconsolata;
+	font-size: 30px;
+	letter-spacing: 5px;
+	/*CSS-Tricks(website) for animated text writing*/
+}
+
+.footer {
+	margin-top: 19%;
+	float: left;
+	padding-left: 7%;
+	text-align: center;
+	position: fixed;
+}
+
+.linkup a {
+	color: #fff;
+	font-weight: bold;
+	font-size: 25px;
+	letter-spacing: 30px;
+}
+
+.down #slider {
+	font-size: 48px;
+	color: #fff;
+}
+
+.down {
+	margin-top: 18%;
+	position: fixed;
+	margin-left: 50%;
+}
+
+#slider:hover {
+	color: orange;
+}
+
+.rights {
+	margin-top: 20%;
+	float: left;
+	margin-left: 72%;
+	text-align: center;
+	position: fixed;
+}
+
+.rights p {
+	color: #fff;
+	font-family: Cabin;
+	font-size: 15px;
+	font-weight: bolder;
+	position: fixed;
+	letter-spacing: 1.5px;
+}
+
+.bounce {
+	top: 0; bottom: 0;
+	left: 0; right: 0;
+	-webkit-animation: bounce 2s infinite ease-in-out;
+}
+
+@-webkit-keyframes bounce {
+	0%, 20%, 60%, 100%  { -webkit-transform: translateY(0); }
+    40%  { -webkit-transform: translateY(-20px); }
+	80% { -webkit-transform: translateY(-10px); }
+}
+
+.linkup a:hover {
+	color: orange;
+}
+
+/*Adding preloading page to website (ihatetomatoes youtube)*/
+#loader-wrapper {
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	background-color: transparent;
+}
+
+#loader {
+	display: block;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	width: 150px;
+	height: 150px;
+	margin: -75px 0 0 -75px;
+	border: 3px solid transparent; 
+	border-top-color: #3498db;
+	border-radius: 50%;
+	z-index: 1001;
+
+	-webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+#loader:before {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	right: 5px;
+	bottom: 5px;
+
+	border: 3px solid transparent;
+	border-top-color: #e74c3c;
+	border-radius: 50%;
+
+	-webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+#loader:after {
+	content: "";
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	right: 15px;
+	bottom: 15px;
+
+	border: 3px solid transparent;
+	border-top-color: #f9c922;
+	border-radius: 50%;
+	-webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+@-webkit-keyframes spin {
+  0%   { 
+  -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+*/ 
+      -ms-transform: rotate(0deg);  /* IE 9 */
+          transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+  100% { 
+  -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+*/ 
+      -ms-transform: rotate(360deg);  /* IE 9 */
+          transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+     }
+}
+
+@keyframes spin {
+  0%   { 
+  -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+*/ 
+      -ms-transform: rotate(0deg);  /* IE 9 */
+          transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+  100% { 
+  -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+*/ 
+      -ms-transform: rotate(360deg);  /* IE 9 */
+          transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+     }
+}
+
+#loader-wrapper .loader-section {
+	position: fixed;
+	top: 0;
+	width: 51%;
+	height: 100%;
+	background: #222;
+	z-index: 1000;
+}
+
+#loader-wrapper .loader-section.section-left {
+	left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+	right: 0;
+}
+
+/*loaded styles*/
+.loaded #loader-wrapper .loader-section.section-left {
+	-webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+*/ 
+      -ms-transform: translateX(-100%);  /* IE 9 */
+          transform: translateX(-100%); /* Firefox 16+, IE 10+, Opera */
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+	-webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+*/ 
+      -ms-transform: translateX(100%);  /* IE 9 */
+          transform: translateX(100%); /* Firefox 16+, IE 10+, Opera */
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+}
+
+
+.loaded #loader {
+	opacity: 0;
+	background: black;
+	-webkit-transition: all 0.3s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+     transition: all 0.3s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+}
+
+.loaded #loader-wrapper {
+	visibility: hidden;
+	-webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+*/ 
+    -ms-transform: translateY(-100%);  /* IE 9 */
+    transform: translateY(-100%); /* Firefox 16+, IE 10+, Opera */
+
+    -webkit-transition: all 0.3s 1s cubic-bezier(0.645, 0.045, 0.355, 1.000);  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+     transition: all 0.3s 1s cubic-bezier(0.645, 0.045, 0.355, 1.000);  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+}
+/*preloading class ends*/
 
 nav {
    margin: 0;
@@ -45,7 +252,7 @@ nav {
 
 /* nav-wrap */
 #nav-wrap {
-   font: 12px Raleway;
+   font: 15px "Encode Sans";
    width: 100%;
    text-transform: uppercase;
    letter-spacing: 2.5px;
@@ -87,7 +294,7 @@ ul#nav li a:active {
 	background-color: transparent !important; 
 }
 
-ul#nav li.current a { color: #F06000; }
+ul#nav li.current a { color: #fff; }
 
 .nav ul{
 	text-align: center;
@@ -101,73 +308,49 @@ ul#nav li.current a { color: #F06000; }
 	box-shadow: none;
 }
 
-#hobbies {
-	text-align: center;
-	color: white;
-	font-family: Raleway;
-	font-size: 18px;
+.icons {
+	color: #fff;
+	font-weight: bolder;
+	font-size: 25px;
 }
 
-#intro {
-	color: #978B8B;
-	font-family: Raleway;
-	font-size: 18px;
+/*Pop-Up Contact Form*/
+#contact { 
+  -webkit-user-select: none; /* Chrome/Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  margin: 4em auto;
+  width: 100px; 
+  height: 30px; 
+  line-height: 30px;
+  background: transparent;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid white;
 }
 
-hr {
-    border: 0;
-    height: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+#contact:hover { background: transparent; }
+#contact:active { background: transparent; }
+
+#contactForm { 
+  display: none;
+  padding: 2em;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: black;
+  opacity: 0.8;
+  position: fixed;
+  top:50%;
+  left:50%;
+  z-index: 10001;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%)
+  
 }
 
-.content {
-	padding-top: 12%;
-}
-
-.linkup .facebook{
-	color: white;
-	padding-left: 15%;
-	font-size: 30px;
-}
-
-.linkup .links {
-	color: white;
-	padding-left: 8%;
-	font-size: 30px;
-}
-
-.logo a {
-   font-size: 45px;
-   color: #fff;
-   padding-left: 48%;
-}
-
-.logo a:hover{ color: #11ABB0;}
-
-#con {
-	min-height: 100%;
-	position: relative;
-}
-
-.logo {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 60px;
-}
-
-@-webkit-keyframes bounce {
-	0%, 20%, 60%, 100%  { -webkit-transform: translateY(0); }
-    40%  { -webkit-transform: translateY(-20px); }
-	80% { -webkit-transform: translateY(-10px); }
-}
-
-.bounce {
-    top: 0; bottom: 0;
-    left: 0; right: 0;
-    width: 40px;
-    height: 40px;
-    font-size: 40px;
-    -webkit-animation: bounce 2s infinite ease-in-out;
+#nav a:hover {
+	text-decoration: underline;
 }
